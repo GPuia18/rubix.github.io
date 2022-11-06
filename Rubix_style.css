@@ -566,7 +566,7 @@ nav{
 }
 
 .sp{
-    height: 30vh;
+    height: 28vh;
 }
 
 .sponsori-secundari{
@@ -578,7 +578,7 @@ nav{
 }
 
 .ss{
-    height: 17vh;
+    height: 15vh;
     margin: 5px;
 }
 
@@ -825,6 +825,12 @@ nav{
         left: 22.5%;
         top: -1%;
     }
+    .ss{
+        height: 15vh;
+    }
+    .sp{
+        height: 25vh;
+    }
     .t11{
         font-size: 15px;
     }
@@ -839,7 +845,7 @@ nav{
         height: 30px;
     }
     .spatiu-social{
-        padding: 0px 5px;
+        padding: 10px 5px;
     }
     .icons{
         padding-left: 0px;
@@ -897,6 +903,12 @@ nav{
     .buton-next-black, .buton-next-white{
         width: 25px;
         height: 25px;
+    }
+    .ss{
+        height: 13vh;
+    }
+    .sp{
+        height: 22vh;
     }
 }
 
