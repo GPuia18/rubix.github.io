@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Rubix_style.css">
+    <title>RUBIX</title>
+</head>
+<body class="background">
+    <div class="background-color"></div>
+    <nav>
+        <div class="sectiune-logo"><a href="index.html"><img src="LogoRosu.png" alt="logo"></a></div>
+        <div class="sectiune-text">
+            <a href="#p2" class="sectiune-nav"><div>
+                Ziua I
+            </div></a>
+            <a href="#p3" class="sectiune-nav"><div>
+                Ziua II
+            </div></a>
+            <a href="#p4" class="sectiune-nav contact"><div>
+                Contact
+            </div></a>
+        </div>
+        <div class="darkmode"  onclick="darkmodeChange()">
+            <img src="sun.png" alt="white"  id="sun">
+            <img src="moon.png" alt="dark" id="moon">
+        </div>
+    </nav>
+
+    <div class="spatiu1"></div>
+    <div id="p1"></div>
+    <div class="titlu-demo">
+        <h1>Demo RUBIX 3.0</h1>
+    </div>
+
+    <div class="orar">
+
+        <div id="p2"></div>
+        <div class="zi">
+            <div class="titlu-zi">
+                Ziua I
+            </div>
+            <div class="orar-zi">
+                <ul>
+                    <li style="padding-bottom: 8px;">8-10: Mic dejun</li>
+                    <li style="padding-bottom: 8px;">10-12: Intâlnire cu echipa RUBIX</li>
+                    <li style="padding-bottom: 8px;">12-14: Cum să dezvolți un business</li>
+                    <li style="padding-bottom: 8px;">14-16: Reach și impact în societate</li>
+                    <li style="padding-bottom: 8px;">16-18: Branding</li>
+                    <li style="padding-bottom: 8px;">18-20: Treasure Hunt</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="linie"></div>
+
+        <div id="p3"></div>
+        <div class="zi">
+            <div class="titlu-zi">
+                Ziua II
+            </div>
+            <div class="orar-zi">
+                <ul>
+                    <li style="padding-bottom: 8px;">8-10: Mic dejun</li>
+                    <li style="padding-bottom: 8px;">10-12: Intâlnire cu echipa RUBIX</li>
+                    <li style="padding-bottom: 8px;">12-14: Cum să dezvolți un business</li>
+                    <li style="padding-bottom: 8px;">14-16: Reach și impact în societate</li>
+                    <li style="padding-bottom: 8px;">16-18: Branding</li>
+                    <li style="padding-bottom: 8px;">18-20: Treasure Hunt</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>  
+    
+    <div id="p4"></div>
+    <div class="social">
+        <div class="spatiu-social">
+            <div class="jumatati">
+                <div class="titluri">
+                    <div class="t1">
+                        <a href="#p2"><div class="t11">Despre</div></a>
+                        <a href="#p3"><div class="t12">Echipă</div></a>
+                        <a href="#p4"><div class="t12">Realizări</div></a>
+                    </div>
+                    <div class="t2">
+                        <a href="#p5"><div class="t11">Sponsori</div></a>
+                        <a href="#p51"><div class="t12">Parteneri</div></a>
+                    </div>
+                    <a href="Demo.html"><div class="t2 t11" style="color: rgb(230,0,0);">Demo 3.0</div></a>
+                </div>
+                <div class="sponsorizari">
+                    <div class="t11" style="cursor: default;">Pentru sponsorizări</div>
+                    <div class="phone">
+                        <img src="phone.png" alt="phone" class="phonei">
+                        <div class="t12"  style="margin-left: 10px; cursor: default;">0740 610 739</div>
+                    </div>
+                    <div class="email">
+                        <img src="mail.png" alt="mail" class="phonei">
+                        <div class="t12" style="margin-left: 10px; cursor: default;">rubixrobots@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+                <div class="icons">
+                        <a href="https://www.facebook.com/RubixTeam/"><div class="facebook"><img class="icon" src="facebook.png" alt="facebook"></div></a>
+                        <a href="https://www.instagram.com/rubix_team/"><div class="insta"><img class="icon" src="insta.png" alt="insta"></div></a>
+                        <a href="#p1"><div class="arrow"><img class="icon-arrow" src="arrow.png" alt="arrow"></div></a>
+                </div>
+        </div>
+        <div class="copyright">
+            <a href="https://github.com/GPuia18" style="color: var(--black); text-decoration: none;"><p>© 2022 RUBIX</p></a>
+        </div>
+    </div>
+
+    <script>
+        var v = document.querySelector(':root');
+        function darkmodeChange()
+    {
+        if(document.getElementById("sun").style.opacity=="1")
+        {
+            document.getElementById("moon").style.opacity="1";
+            document.getElementById("sun").style.opacity="0";
+            v.style.setProperty('--black', 'black');
+            v.style.setProperty('--whitegrad', 'radial-gradient(circle at bottom, rgba(255,255,255,.4),rgba(255,255,255,.5),rgba(255,255,255,.6),rgba(255,255,255,1))');
+            v.style.setProperty('--blackhover','rgba(255,255,255,.6)');
+            v.style.setProperty('--whitehover', 'rgba(0,0,0,.6)');
+        }
+        else
+        {
+            document.getElementById("sun").style.opacity="1";
+            document.getElementById("moon").style.opacity="0";
+            v.style.setProperty('--black', 'white');
+            v.style.setProperty('--whitegrad', 'radial-gradient(circle at bottom, rgba(0,0,0,.4),rgba(0,0,0,.5),rgba(0,0,0,.65),rgba(0,0,0,1))');
+            v.style.setProperty('--blackhover', 'rgba(0,0,0,.6)');
+            v.style.setProperty('--whitehover', 'rgba(255,255,255,.6)');
+        }
+    }
+
+    const sectionNav = document.querySelector("nav");
+    const sectionOne = document.querySelector(".spatiu1");
+    const options = {root: null, 
+        threshold: 0.1,
+         rootMargin: "0px 0px 0px 0px"
+    };
+
+    const observer = new IntersectionObserver(function(entries,observer){
+        entries.forEach(entry => {
+            console.log(entry.target);
+            if(!entry.isIntersecting)
+            {
+                sectionNav.classList.add("blurry");
+            }
+            else
+            sectionNav.classList.remove("blurry");
+        });
+    },options);
+    observer.observe(sectionOne);
+    </script>
+</body>
+</html>    
