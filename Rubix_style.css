@@ -883,9 +883,6 @@ nav{
         width: 9em;
         height: 12em;
     }
-    .titlu-status{
-        font-size: 1.5em;
-    }
     .membru{
         height: 300px;
     }
@@ -897,6 +894,7 @@ nav{
     }
     .titlu-status{
         font-size: 1.2em;
+        font-weight: 600;
         top: -5%;
         left: 26%;
     }
