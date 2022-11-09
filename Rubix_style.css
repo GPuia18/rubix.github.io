@@ -590,6 +590,14 @@ nav{
     padding: 10px 10px 20px 10px;
 }
 
+.ftcn{
+    width: 40vw;
+}
+
+.ftc-natie{
+    padding-bottom: 30px;
+}
+
 @keyframes memberCardPicture{
     0%{
         transform: translateX(-10px);
@@ -663,6 +671,12 @@ nav{
     font-size: 1.5em;
     color: white;
     margin-right: 2em ;
+    transition: .25s ease-in-out;
+}
+
+.pop-up-button:hover{
+    background-color: white;
+    color: red;
 }
 
 .pop-up-close{
@@ -676,6 +690,11 @@ nav{
     margin-top: 1em;
     margin-right: 1em;
     cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+.pop-up-close:hover{
+    transform: scale(110%);
 }
 
 @keyframes Appear {
@@ -729,6 +748,9 @@ nav{
     .spatiu-social{
         width: 70vw;
     }
+    .ftcn{
+        width: 60vw;
+    }
 }
 
 @media only screen and (max-width:700px) {
@@ -751,6 +773,9 @@ nav{
         width: 80vw;
     }
     .pop-up-window{
+        width: 90vw;
+    }
+    .ftcn{
         width: 90vw;
     }
 }
@@ -997,5 +1022,62 @@ nav{
         background-color: var(--black);
         margin-right: 0px;
     }
+}
+
+.titlu-cazari{
+    width: 100vw;
+    text-align: center;
+}
+
+.cazare{
+    margin-top: 100px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cartonas-cazare{
+    width: 300px;
+    height: 350px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.cartonas-cazare:not(:last-child){
+    margin-bottom: 100px;
+}
+
+.titlu-cazare{
+    padding: 0px 10px;
+    color: var(--black);
+}
+
+.detalii{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.locatie, .telefon, .booking, .site{
+    color: var(--black);
+    font-size: 1.1em;
+    margin: 5px 10px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+.locatie-icon, .telefon-icon, .booking-icon, .site-icon{
+    height: 3vh;
+    margin-right: 10px;
+    transform: translateY(25%);
 }
 
