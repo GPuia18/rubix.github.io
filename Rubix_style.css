@@ -861,9 +861,13 @@ nav{
     }
     .t11{
         font-size: 15px;
+        text-decoration: none;
+        color: var(--black);
     }
     .t12{
         font-size: 13px;
+        text-decoration: none;
+        color: var(--black);
     }
     .icon{
         width: 30px;
