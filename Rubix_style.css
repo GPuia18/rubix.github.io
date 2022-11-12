@@ -66,7 +66,6 @@ nav{
 
 .contact{
     color: red;
-    border: 2px solid red;
 }
 
 .sectiune-text{
@@ -90,8 +89,7 @@ nav{
 }
 
 .contact:hover{
-    background-color: rgba(255,0,0,.9);
-    color: white;
+    color: var(--black);
 }
 
 .darkmode{
@@ -868,6 +866,7 @@ nav{
         font-size: 13px;
         text-decoration: none;
         color: var(--black);
+
     }
     .icon{
         width: 30px;
