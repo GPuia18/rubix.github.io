@@ -59,12 +59,16 @@
             <div class="poza">
                 <img src="sezon 4.jpg" alt="s4" style="display: block; opacity: 0%;" id="s4" loading="lazy">
             </div>
+            <div class="poza">
+                <img src="sezon 5.jpg" alt="s5" style="display: block; opacity: 0%;" id="s5" loading="lazy">
+            </div>
         </div>
         <div class="buline">
             <span class="bul" onclick="push(1)" style="border-color: red;" id="1"></span>
             <span class="bul" onclick="push(2)" id="2"></span>
             <span class="bul" onclick="push(3)" id="3"></span>
             <span class="bul" onclick="push(4)" id="4"></span>
+            <span class="bul" onclick="push(5)" id="5"></span>
         </div>
         <div class="descriere">
             <p class="titlu" style="font-size: 50px; color: red;">RUBIX</p>
@@ -390,76 +394,33 @@
     }
 
     function push(x){
-        if(x==1)
-        {
-            document.getElementById("s1").style.opacity="0%";
-            document.getElementById("s2").style.opacity="0%";
-            document.getElementById("s3").style.opacity="0%";
-            document.getElementById("s4").style.opacity="0%";
-            document.getElementById("s1").style.opacity="0%";
-            document.getElementById("s"+x).style.opacity="100%";
-            document.getElementById("1").style.borderColor="red";
-            document.getElementById("3").style.borderColor="var(--black)";
-            document.getElementById("2").style.borderColor="var(--black)";
-            document.getElementById("4").style.borderColor="var(--black)";
+        for(let i = 1; i <= 5; i++){
+            document.getElementById("s" + i).style.opacity="0%";
+            document.getElementById("" + i).style.borderColor="var(--black)";
         }
-        else if(x==2)
-        {
-            document.getElementById("s1").style.opacity="0%";
-            document.getElementById("s2").style.opacity="0%";
-            document.getElementById("s3").style.opacity="0%";
-            document.getElementById("s4").style.opacity="0%";
-            document.getElementById("s1").style.opacity="0%";
-            document.getElementById("s"+x).style.opacity="100%";
-            document.getElementById("2").style.borderColor="red";
-            document.getElementById("3").style.borderColor="var(--black)";
-            document.getElementById("4").style.borderColor="var(--black)";
-            document.getElementById("1").style.borderColor="var(--black)";
-        }
-        else if(x==3)
-        {
-            document.getElementById("s1").style.opacity="0%";
-            document.getElementById("s2").style.opacity="0%";
-            document.getElementById("s3").style.opacity="0%";
-            document.getElementById("s4").style.opacity="0%";
-            document.getElementById("s1").style.opacity="0%";
-            document.getElementById("s"+x).style.opacity="100%";
-            document.getElementById("3").style.borderColor="red";
-            document.getElementById("4").style.borderColor="var(--black)";
-            document.getElementById("2").style.borderColor="var(--black)";
-            document.getElementById("1").style.borderColor="var(--black)";
-        }
-        else if(x==4)
-        {
-            document.getElementById("s1").style.opacity="0%";
-            document.getElementById("s2").style.opacity="0%";
-            document.getElementById("s3").style.opacity="0%";
-            document.getElementById("s4").style.opacity="0%";
-            document.getElementById("s1").style.opacity="0%";
-            document.getElementById("s"+x).style.opacity="100%";
-            document.getElementById("4").style.borderColor="red";
-            document.getElementById("3").style.borderColor="var(--black)";
-            document.getElementById("2").style.borderColor="var(--black)";
-            document.getElementById("1").style.borderColor="var(--black)";
-        }
+        document.getElementById("s" + x).style.opacity="100%";
+        document.getElementById("" + x).style.borderColor="red";
         counter=x;
         r=6000;
     }
+
     setInterval(function auto(){
         document.getElementById("s1").style.opacity="0%";
         document.getElementById("s2").style.opacity="0%";
         document.getElementById("s3").style.opacity="0%";
         document.getElementById("s4").style.opacity="0%";
-        document.getElementById("s"+counter).style.opacity="100%";
+        document.getElementById("s5").style.opacity="0%";
+        document.getElementById("s" + counter).style.opacity="100%";
+        document.getElementById("5").style.borderColor="var(--black)";
         document.getElementById("4").style.borderColor="var(--black)";
         document.getElementById("3").style.borderColor="var(--black)";
         document.getElementById("2").style.borderColor="var(--black)";
         document.getElementById("1").style.borderColor="var(--black)";
-        document.getElementById(""+counter).style.borderColor="red";
+        document.getElementById("" + counter).style.borderColor="red";
         counter++;
-        if(counter>4)counter=1;
-        r=5000;
-    },r);
+        if(counter > 5)counter = 1;
+        r = 5000;
+    }, r);
     
     setInterval(function autoMembers(){
         for(let i = 1; i <= p; i++) {
@@ -480,7 +441,7 @@
         else c = 1;
         if(c1 < p1) c1++;
         else c1 = 1;
-    },r1);
+    }, r1);
 
     let pct1 = document.getElementById("punct1");
     let pct2 = document.getElementById("punct2");
@@ -500,7 +461,7 @@
         else {
             pct1.style.opacity = "1";
         }
-    },1000);
+    }, 1000);
 
     const sectionNav = document.querySelector("nav");
     const sectionOne = document.querySelector(".spatiu");
