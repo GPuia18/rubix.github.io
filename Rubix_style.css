@@ -972,6 +972,14 @@ nav{
     font-size: 40px;
 }
 
+.locatie-demo{
+    color: var(--black);
+}
+
+.locatie-demo-icon{
+    height: 25px;
+}
+
 .orar{
     margin-top: 80px;
     z-index: 2;
@@ -1089,7 +1097,7 @@ nav{
 }
 
 .locatie-icon, .telefon-icon, .booking-icon, .site-icon{
-    height: 3vh;
+    height: 20px;
     margin-right: 10px;
     transform: translateY(25%);
 }
