@@ -71,7 +71,6 @@ nav{
 .sectiune-text{
     display: flex;
     flex-direction: row;
-    padding-right: 15px;
 }
 
 .sectiune-logo img{
@@ -401,7 +400,7 @@ nav{
 
 .titlu-status{
     color: red;
-    font-weight: 600;
+    font-weight:bold;
     position: absolute;
     font-size: 1.4em;
     left: 26%;
@@ -489,14 +488,18 @@ nav{
 }
 
 .mm2{
-    background-image: url("Alexandra.JPG");
+    background-image: url("GhitaIoan.jpg");
 }
 
 .mm3{
-    background-image: url("Nicu.jpg");
+    background-image: url("Alexandra.JPG");
 }
 
 .mm4{
+    background-image: url("Nicu.jpg");
+}
+
+.mm5{
     background-image: url("Gabriel.jpg");
 }
 
@@ -505,7 +508,7 @@ nav{
     flex-direction: column;
 }
 
-#mm2,#mm3,#mm4{
+#mm2,#mm3,#mm4,#mm5{
     display: none;
     flex-direction: column;
 }
