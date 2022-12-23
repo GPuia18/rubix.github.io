@@ -27,7 +27,7 @@ body{
     z-index: -3;
     height: 100vh;
     width: 100vw;
-    background-image: url("/images/Logo_facebook.png");
+    background-image: url("./images/Logo_facebook.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -196,7 +196,7 @@ nav{
 .anunt-demo{
     width: 100vw;
     height: 500px;
-    background-image: url("/images/PopUpBackground.png");
+    background-image: url("./images/PopUpBackground.png");
     background-size: cover;
     position: relative;
 }
@@ -418,59 +418,59 @@ nav{
 }
 
 .m1{
-    background-image: url("/images/Alex.jpg");
+    background-image: url("./images/Alex.jpg");
 }
 
 .m2{
-    background-image: url("/images/Maria.jpg");
+    background-image: url("./images/Maria.jpg");
 }
 
 .m3{
-    background-image: url("/images/GeorgeB.jpg");
+    background-image: url("./images/GeorgeB.jpg");
 }
 
 .m4{
-    background-image: url("/images/Cristi.jpg");
+    background-image: url("./images/Cristi.jpg");
 }
 
 .m5{
-    background-image: url("/images/Albert.jpg");
+    background-image: url("./images/Albert.jpg");
 }
 
 .m6{
-    background-image: url("/images/Tudor.jpg");
+    background-image: url("./images/Tudor.jpg");
 }
 
 .m7{
-    background-image: url("/images/Catalin.jpg");
+    background-image: url("./images/Catalin.jpg");
 }
 
 .m8{
-    background-image: url("/images/Elizabeth.jpg");
+    background-image: url("./images/Elizabeth.jpg");
 }
 
 .m9{
-    background-image: url("/images/Anamaria.JPG");
+    background-image: url("./images/Anamaria.JPG");
 }
 
 .m10{
-    background-image: url("/images/Maia.JPG");
+    background-image: url("./images/Maia.JPG");
 }
 
 .m11{
-    background-image: url("/images/Bogdan.jpg");
+    background-image: url("./images/Bogdan.jpg");
 }
 
 .m12{
-    background-image: url("/images/Alin.jpg");
+    background-image: url("./images/Alin.jpg");
 }
 
 .m13{
-    background-image: url("/images/George.jpg");   
+    background-image: url("./images/George.jpg");   
 }
 
 .m14{
-    background-image: url("/images/Darius.jpg");
+    background-image: url("./images/Darius.jpg");
 }
 
 #m1{
@@ -484,23 +484,23 @@ nav{
 }
 
 .mm1{
-    background-image: url("/images/Romanta.jpg");
+    background-image: url("./images/Romanta.jpg");
 }
 
 .mm2{
-    background-image: url("/images/GhitaIoan.jpg");
+    background-image: url("./images/GhitaIoan.jpg");
 }
 
 .mm3{
-    background-image: url("/images/Alexandra.JPG");
+    background-image: url("./images/Alexandra.JPG");
 }
 
 .mm4{
-    background-image: url("/images/Nicu.jpg");
+    background-image: url("./images/Nicu.jpg");
 }
 
 .mm5{
-    background-image: url("/images/Gabriel.jpg");
+    background-image: url("./images/Gabriel.jpg");
 }
 
 #mm1{
@@ -531,7 +531,7 @@ nav{
     width: 30px;
     height: 30px;
     position: absolute;
-    background-image: url("/images/nextB.png");
+    background-image: url("./images/nextB.png");
     background-size: cover;
     right: 10%;
     top: 30%;
@@ -544,7 +544,7 @@ nav{
     width: 30px;
     height: 30px;
     position: absolute;
-    background-image: url("/images/nextW.png");
+    background-image: url("./images/nextW.png");
     background-size: cover;
     right: 10%;
     top: 30%;
@@ -644,7 +644,7 @@ nav{
     position: relative;
     height: 80vh;
     border-radius: 20px;
-    background-image: url("/images/PopUpBackground.png");
+    background-image: url("./images/PopUpBackground.png");
     background-size: cover ;
     background-position:50%;
 }
@@ -687,7 +687,7 @@ nav{
 
 .pop-up-close{
     position: absolute;
-    background-image: url("/images/close_icon.png");
+    background-image: url("./images/close_icon.png");
     background-size: cover;
     height: 1.7em;
     width: 1.7em;
@@ -944,7 +944,7 @@ nav{
 
 
 .background{
-    background-image: url("/images/Background_Schedule.png");
+    background-image: url("./images/Background_Schedule.png");
     background-repeat: repeat;
 }
 
