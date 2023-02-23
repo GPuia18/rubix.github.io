@@ -46,7 +46,7 @@ nav{
     z-index: 2;
     width: 100vw;
     top: 0;
-    height: 10vh;
+    height: 60px;
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -73,38 +73,46 @@ nav{
     flex-direction: row;
 }
 
-.sectiune-logo img{
-    height: 7vh;
+.sectiune-logo{
+    width: 45px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.sectiune-logo{
-    padding: 10px;
+.sectiune-logo img{
+    height: 45px;
+}
+
+.sectiune-logo a{
+    padding: 5px;
     max-height: 15px;
-    align-items: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sectiune-nav:hover{
     color: var(--whitehover);
 }
 
-.contact:hover{
-    color: var(--black);
-}
-
 .darkmode{
-    height: 6vh;
-    width: 5.5vh;
+    height: 50px;
+    width: 45px;
     position: relative;
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 #sun, #moon{
     position: absolute;
-    height: 5.5vh;
+    height: 35px;
     transition: .6s ease-in-out;
+    padding: 0px 5px;
 }
 
 #sun{
@@ -266,6 +274,15 @@ nav{
     width: 40px;
     border: 1px solid transparent;
     border-radius: 100%;
+    transition: .2s ease-in-out;
+}
+
+.icon:hover, .arrow:hover{
+    transform: scale(110%);
+}
+
+.icon:hover{
+    filter: drop-shadow(0px 0px 7.5px red);
 }
 
 .icons{
@@ -282,6 +299,7 @@ nav{
     justify-content: center;
     align-items: center;
     padding: 10px;
+    transition: .2s ease-in-out;
 }
 
 .titluri{
@@ -809,14 +827,14 @@ nav{
         width: 450px;
         height: 300px;
     }
-    .sectiune-logo{
+    .sectiune-logo, .darkmode{
         padding:2px;
     }
     .sectiune-logo img{
-        height: 6vh;
+        height: 35px;
     }
-    .darkmode{
-        padding: 0px;
+    #sun, #moon{
+        height: 30px;
     }
     .cont-poze{
         max-width: 450px;
@@ -852,6 +870,9 @@ nav{
     .sectiune-text{
         padding:0;
         font-size: 15px;
+    }
+    .darkmode{
+        padding: 0;
     }
     nav{
         justify-content: center;
@@ -924,10 +945,16 @@ nav{
         font-size: 1.5em;
     }
     .sectiune-logo img{
-        height: 6vh;
+        height: 30px;
+    }
+    .sectiune-logo a{
+        padding: 0;
+    }
+    #sun, #moon{
+        height: 25px;
     }
     .membru{
-        width: 300px;
+        width: 250px;
     }
     .poza-membru{
         width: 9em;
