@@ -14,7 +14,7 @@
         <button type="button" class="buton_generare" onclick="generate()">Register</button>
     </form>
     <div class="challange" id="challange">
-        <h2>Challange</h2>
+        <h2 style="color: red;">Challange</h2>
         <p id="challange_text"></p>
     </div>
 </body>
@@ -27,6 +27,8 @@
     }
 
     console.log(document.cookie);
+
+    document.cookie = "text=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
 
     let c = new Array(Challange);
 
@@ -95,7 +97,7 @@
                 })
             }
             else {
-                document.getElementById("challange").innerHTML="<h2>Enter valid data</h2><button onclick='refresh()'>Retry</button>";
+                document.getElementById("challange").innerHTML="<h2 style='margin-bottom: 30px'>Enter valid data</h2><button onclick='refresh()' style='width: 150px'>Retry</button>";
                 document.getElementById("challange").style.display="flex";
                 document.getElementById("formular").style.display="none";
             }       

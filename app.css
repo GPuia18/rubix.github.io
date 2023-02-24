@@ -12,6 +12,11 @@ body{
     align-content: center;
     height: 100vh;
     width: 100vw;
+    background-image: url("./images/fundal_app.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
 }
 
 #challange{
@@ -19,16 +24,21 @@ body{
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    color: black;
     padding: 10px;
+    background-color: rgba(255,255,255,.95);
+    width: 100vw;
 }
 
 #challange h2{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 30px;
 }
 
 #challange_text{
-    font-size: 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
 #formular{
@@ -36,12 +46,23 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: rgba(255,255,255,.95);
+    padding: 15px;
+    width: 100vw;
 }
 
-#formular input, #formular button{
-    margin: 10px 0px;
+#formular input{
+    margin: 25px 10px;
+    border: 1px solid black;
+    padding: 5px;
 }
 
-button{
+#formular button, button{
+    margin: 20px 0px;
     cursor: pointer;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid black;
 }
