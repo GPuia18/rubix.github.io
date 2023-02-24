@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Challange App</title>
+</head>
+<body>
+    <form id="formular">
+        <input type="text" placeholder="First name" id="first_name" name="first_name">
+        <input type="text" placeholder="Team name" id="team_name" name="team_name">
+        <button type="button" class="buton_generare" onclick="generate()">Register</button>
+    </form>
+    <div class="challange" id="challange">
+        <h2>Challange</h2>
+        <p id="challange_text"></p>
+    </div>
+</body>
+<script>
+    class Challange{
+        constructor(id, text){
+            this.id = id;
+            this.text = text;
+        }
+    }
+
+    console.log(document.cookie);
+
+    let c = new Array(Challange);
+
+    function random(max) {
+        let x = Math.round(Math.random()*(max-1)+1);
+        return x;
+    }
+
+    function checkCookie() {
+        let firstName = getCookie();
+        if (firstName == "") {
+            return false;
+        } 
+        else {
+            return true;
+        }
+    }
+
+    function getCookie() {
+        let b = document.cookie.split(';');
+        //console.log(b[1]);
+        for(let i=0;i<b.length;i++) {
+            let a = b[i].split("=");
+            if(a[0].indexOf("text")>0){
+                //console.log(a[1]);
+                return a[1];
+            }
+        }
+        return "";
+    }
+
+    if(getCookie()) {
+        let cText = getCookie();
+        document.getElementById("challange_text").innerHTML = cText;
+        document.getElementById("challange").style.display="flex";
+        document.getElementById("formular").style.display="none";
+    }
+
+    let form = document.getElementById("formular");
+
+    function generate(){
+
+        let firstName = document.getElementById("first_name").value;
+        let teamName = document.getElementById("team_name").value;
+
+        if(!checkCookie()) {
+            if((firstName!="")&&(teamName!="")) {
+
+                fetch("https://gpuia18.github.io/rubix.github.io/Data.json")
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    let cText = data.challanges[random(data.challanges.length)-1].text;
+                    //console.log(cText);
+                    document.getElementById("challange_text").innerHTML = cText;
+                    document.getElementById("challange").style.display="flex";
+                    document.getElementById("formular").style.display="none";
+                    document.cookie = "text=" + cText +";expires=Tue, 7 Mar 2023 12:00:00 UTC";
+                    //console.log(cText);
+                    //document.cookie = "name=" + firstName +";expires=Tue, 7 Mar 2023 12:00:00 UTC";
+                    //document.cookie = "team=" + teamName +";expires=Tue, 7 Mar 2023 12:00:00 UTC";
+                })
+            }
+            else {
+                document.getElementById("challange").innerHTML="<h2>Enter valid data</h2><button onclick='refresh()'>Retry</button>";
+                document.getElementById("challange").style.display="flex";
+                document.getElementById("formular").style.display="none";
+            }       
+        }
+        else {
+            let cText = getCookie();
+            document.getElementById("challange_text").innerHTML = cText;
+            document.getElementById("challange").style.display="flex";
+            document.getElementById("formular").style.display="none";
+        }
+    }
+
+    function refresh() {
+        document.getElementById("challange").innerHTML='<meta http-equiv="refresh" content="0">';
+    }
+    //console.log(c[1]);
+</script>
+</html>
