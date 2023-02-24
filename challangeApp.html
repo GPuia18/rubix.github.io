@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="app.css">
     <title>Challange App</title>
 </head>
-<body>
+<body onload="showCookie()">
     <form id="formular">
         <input type="text" placeholder="First name" id="first_name" name="first_name">
         <input type="text" placeholder="Team name" id="team_name" name="team_name">
@@ -58,7 +58,7 @@
         return "";
     }
 
-    if(getCookie()) {
+    function showCookie(){
         let cText = getCookie();
         document.getElementById("challange_text").innerHTML = cText;
         document.getElementById("challange").style.display="flex";
