@@ -1,6 +1,6 @@
 {
     "challanges": [
-        {"id": "1", "text": "Gaseste standul echipei Xeo si fa o poza cu echipa"},
-        {"id": "2", "text": "Gaseste standul echipei Pheonix si obtineti un material promotional. Aduceti-l la standul nostru"}
+        {"id": "1", "text": "Gaseste standul echipei Xeo si fa o poza cu echipa."},
+        {"id": "2", "text": "Gaseste standul echipei Phoenix si obtineti un material promotional. Aduceti-l la standul nostru."}
     ]
 }
