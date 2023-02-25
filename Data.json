@@ -1,6 +1,15 @@
 {
     "challanges": [
-        {"id": "1", "text": "Gaseste standul echipei Xeo si fa o poza cu echipa."},
-        {"id": "2", "text": "Gaseste standul echipei Phoenix si obtine un material promotional. Adu-l la standul nostru pentru validare."}
+        {"id": "1", "text": "Gaseste standul echipei Thobor si intreaba-i daca au mustar de Tecuci. Fa-i o poza si adu-o la stand pentru validare."},
+        {"id": "2", "text": "Gaseste standul echipei Phoenix si obtine un material promotional. Adu-l la standul nostru pentru validare."},
+        {"id": "3", "text": "Roaga un queuer sa faceti o poza impreuna. Arata-ne poza la stand pentru validare."},
+        {"id": "4", "text": "Gaseste standul echipei Xeo si fa o poza cu echipa. Arata-ne poza la stand pentru validare."},
+        {"id": "5", "text": "Am ascuns un obiect misterios cu insemnul echipei prin incapere. Gaseste-l si adu-l la stand pentru validare."},
+        {"id": "6", "text": "Mergi la un membru din echipa AlphaBit. Jucati piatra-hartie-foarfeca si aduceti filmarea cu jocul la stand pentru validare."},
+        {"id": "7", "text": "Creati un semn cu \"free hugs\" si oferiti macar 3 imbratisari unor persoane random. Poza/video pentru validare la stand."},
+        {"id": "8", "text": "Strange 10 semnaturi de la 10 echipe diferite. Adu foaia la stand pentru validare."},
+        {"id": "9", "text": "Colegii de la Infinity Bolts spun ca au un Hulk, insa suntem curiosi care e caracterul lor preferat din MCU. Intreaba-i pe cel putin 3 dintre ei. Te asteptam cu raspunsurile la stand pentru validare."},
+        {"id": "10", "text": "De ce TeaBorgs au un T-Rex ca mascota si nu un plic de ceai? Ajuta-ne sa deslusim acest mister venind cu raspunsul lor la stand pentru validare."},
+        {"id": "11", "text": "Salutati-i pe colegii de la Montenegro Robotics si oferiti-le incurajari. Faceti poza cu echipa la stand si aduceti-o pentru validare."}
     ]
 }
