@@ -8,6 +8,10 @@
     <title>Challenge App</title>
 </head>
 <body onload="showCookie()">
+    <div class="content">
+    <div class="umplutura">
+
+    </div>
     <form id="formular">
         <input type="text" placeholder="First name" id="first_name" name="first_name">
         <input type="text" placeholder="Team name" id="team_name" name="team_name">
@@ -16,6 +20,7 @@
     <div class="challange" id="challange">
         <h2 style="color: red;">Challenge</h2>
         <p id="challange_text"></p>
+    </div>
     </div>
 </body>
 <script>
@@ -28,7 +33,7 @@
 
     console.log(document.cookie);
 
-    document.cookie = "text=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+    //document.cookie = "text=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
 
     let c = new Array(Challange);
 

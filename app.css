@@ -6,17 +6,21 @@
 }
 
 body{
+    background-image: url("./images/fundal_app.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    backdrop-filter: blur(0px);
+}
+
+.content{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     height: 100vh;
     width: 100vw;
-    background-image: url("./images/fundal_app.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(0px);
 }
 
 #challange{
@@ -26,14 +30,15 @@ body{
     flex-direction: column;
     align-items: center;
     color: black;
-    padding: 10px;
-    background-color: rgba(255,255,255,.95);
+    padding: 0px 10px;
     width: 100vw;
+    background-color: rgba(255,255,255,.9);
 }
 
 #challange h2{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 30px;
+    text-shadow: 1px 0px 1px rgba(255,255,255,.2);
 }
 
 #challange_text{
@@ -46,8 +51,9 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(255,255,255,.95);
-    padding: 15px;
+    background-color: rgba(255,255,255,.9);
+    padding: 0px 15px;
+    height: 50vh;
     width: 100vw;
 }
 
@@ -65,4 +71,26 @@ body{
     color: white;
     padding: 10px 20px;
     border: 2px solid black;
+}
+
+.umplutura{
+    width: 100vw;
+    height: 50vh;
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        background-position: center;
+    }
+    .content{
+        background-image: linear-gradient(to top, rgba(255,255,255,1), rgba(0,0,0,0));
+    }
+    #formular, #challange{
+        height: 50vh;
+        background-color: transparent;
+    }
+    .umplutura{
+        display: block;
+    }
 }
