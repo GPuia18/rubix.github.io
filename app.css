@@ -23,7 +23,7 @@ body{
     width: 100vw;
 }
 
-#challange{
+#challenge{
     display: none;
     text-align: center;
     justify-content: center;
@@ -35,13 +35,12 @@ body{
     background-color: rgba(255,255,255,.9);
 }
 
-#challange h2{
+#challenge h2{
     margin-bottom: 20px;
     font-size: 30px;
-    text-shadow: 1px 0px 1px rgba(255,255,255,.2);
 }
 
-#challange_text{
+#challenge_text{
     font-size: 25px;
     margin-bottom: 20px;
 }
@@ -71,11 +70,12 @@ body{
     color: white;
     padding: 10px 20px;
     border: 2px solid black;
+    font-size: 15px;
 }
 
 .umplutura{
     width: 100vw;
-    height: 50vh;
+    height: 30vh;
     display: none;
 }
 
@@ -86,11 +86,15 @@ body{
     .content{
         background-image: linear-gradient(to top, rgba(255,255,255,1), rgba(0,0,0,0));
     }
-    #formular, #challange{
+    #formular, #challenge{
         height: 50vh;
         background-color: transparent;
     }
     .umplutura{
         display: block;
+    }
+    #challenge h2{
+        color: white !important;
+        text-shadow: 0px 0px 5px rgba(255,0,0,.5);
     }
 }

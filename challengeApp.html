@@ -17,14 +17,14 @@
         <input type="text" placeholder="Team name" id="team_name" name="team_name">
         <button type="button" class="buton_generare" onclick="generate()">Register</button>
     </form>
-    <div class="challange" id="challange">
-        <h2 style="color: red;">Challenge</h2>
-        <p id="challange_text"></p>
+    <div class="challenge" id="challenge">
+        <h2 style="color: red">Challenge</h2>
+        <p id="challenge_text"></p>
     </div>
     </div>
 </body>
 <script>
-    class Challange{
+    class Challenge{
         constructor(id, text){
             this.id = id;
             this.text = text;
@@ -35,7 +35,7 @@
 
     //document.cookie = "text=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
 
-    let c = new Array(Challange);
+    let c = new Array(Challenge);
 
     function random(max) {
         let x = Math.round(Math.random()*(max-1)+1);
@@ -69,8 +69,8 @@
         if(checkCookie())
         {
             let cText = getCookie();
-            document.getElementById("challange_text").innerHTML = cText;
-            document.getElementById("challange").style.display="flex";
+            document.getElementById("challenge_text").innerHTML = cText;
+            document.getElementById("challenge").style.display="flex";
             document.getElementById("formular").style.display="none";
         }
     }
@@ -92,8 +92,8 @@
                 .then(function (data) {
                     let cText = data.challanges[random(data.challanges.length)-1].text;
                     //console.log(cText);
-                    document.getElementById("challange_text").innerHTML = cText;
-                    document.getElementById("challange").style.display="flex";
+                    document.getElementById("challenge_text").innerHTML = cText;
+                    document.getElementById("challenge").style.display="flex";
                     document.getElementById("formular").style.display="none";
                     document.cookie = "text=" + cText +";expires=Tue, 7 Mar 2023 12:00:00 UTC";
                     //console.log(cText);
@@ -102,21 +102,21 @@
                 })
             }
             else {
-                document.getElementById("challange").innerHTML="<h2 style='margin-bottom: 30px'>Enter valid data</h2><button onclick='refresh()' style='width: 150px'>Retry</button>";
-                document.getElementById("challange").style.display="flex";
+                document.getElementById("challenge").innerHTML="<h2 style='margin-bottom: 30px'>Enter valid data</h2><button onclick='refresh()' style='width: 150px'>Retry</button>";
+                document.getElementById("challenge").style.display="flex";
                 document.getElementById("formular").style.display="none";
             }       
         }
         else {
             let cText = getCookie();
-            document.getElementById("challange_text").innerHTML = cText;
-            document.getElementById("challange").style.display="flex";
+            document.getElementById("challenge_text").innerHTML = cText;
+            document.getElementById("challenge").style.display="flex";
             document.getElementById("formular").style.display="none";
         }
     }
 
     function refresh() {
-        document.getElementById("challange").innerHTML='<meta http-equiv="refresh" content="0">';
+        document.getElementById("challenge").innerHTML='<meta http-equiv="refresh" content="0">';
     }
     //console.log(c[1]);
 </script>
