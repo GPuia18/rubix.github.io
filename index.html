@@ -63,6 +63,9 @@
             <div class="poza">
                 <img src="./images/sezon 5.jpg" alt="s5" style="display: block; opacity: 0%;" id="s5" loading="lazy">
             </div>
+            <div class="poza">
+                <img src="./images/sezon 6.jpg" alt="s5" style="display: block; opacity: 0%;" id="s6" loading="lazy">
+            </div>
         </div>
         <div class="buline">
             <span class="bul" onclick="push(1)" style="border-color: red;" id="1"></span>
@@ -70,6 +73,7 @@
             <span class="bul" onclick="push(3)" id="3"></span>
             <span class="bul" onclick="push(4)" id="4"></span>
             <span class="bul" onclick="push(5)" id="5"></span>
+            <span class="bul" onclick="push(6)" id="6"></span>
         </div>
         <div class="descriere">
             <p class="titlu" style="font-size: 50px; color: red;">RUBIX</p>
@@ -122,7 +126,7 @@
                 </div>
                 <div class="membru" id="m2">
                     <div class="poza-membru m2"></div>
-                    <div class="nume-membru">Maria Bărbat</div>
+                    <div class="nume-membru">Bianca Pripon</div>
                     <div class="status-membru">Tehnoredactare</div>
                 </div>
                 <div class="membru" id="m3">
@@ -137,22 +141,22 @@
                 </div>
                 <div class="membru" id="m5">
                     <div class="poza-membru m5"></div>
-                    <div class="nume-membru">Albert Crișan</div>
+                    <div class="nume-membru">Paul Birilă</div>
                     <div class="status-membru">Programare</div>
                 </div>
                 <div class="membru" id="m6">
                     <div class="poza-membru m6"></div>
                     <div class="nume-membru">Tudor Corbean</div>
-                    <div class="status-membru">Programare</div>
+                    <div class="status-membru">Proiectare 3D</div>
                 </div>
                 <div class="membru" id="m7">
                     <div class="poza-membru m7"></div>
-                    <div class="nume-membru">Cătălin Corlaciu</div>
-                    <div class="status-membru">Programare</div>
+                    <div class="nume-membru">Emanuel Todea</div>
+                    <div class="status-membru">Asamblare</div>
                 </div>
                 <div class="membru" id="m8">
                     <div class="poza-membru m8"></div>
-                    <div class="nume-membru mic">Comandașu Elizabeth</div>
+                    <div class="nume-membru mic">Elizabeth Comandașu</div>
                     <div class="status-membru">Tehnoredactare</div>
                 </div>
                 <div class="membru" id="m9">
@@ -179,11 +183,6 @@
                     <div class="poza-membru m13"></div>
                     <div class="nume-membru">George Oniga</div>
                     <div class="status-membru">Asamblare</div>
-                </div>
-                <div class="membru" id="m14">
-                    <div class="poza-membru m14"></div>
-                    <div class="nume-membru">Darius Simu</div>
-                    <div class="status-membru">Proiectare 3D</div>
                 </div>
                 <div class="buton-next-white" id="w" onclick="nextm()"></div>
                 <div class="buton-next-black" id="b" onclick="nextm()"></div>
@@ -289,7 +288,7 @@
             <img src="./images/asociatie.png" alt="asociatie" class="ss" style="height: 25vh;">
         </div>
         <div class="ftc-natie">
-        <img src="./images/logo_ftc_natie.png" alt="ftc&natie" class="ftcn">
+        <img src="./images/logo_ftc_natie.jpg" alt="ftc&natie" class="ftcn">
         </div>
     </div>
 
@@ -342,7 +341,7 @@
 
     let q = document.getElementById("pop_up");
 
-    var p = 14, p1 = 5;
+    var p = 13, p1 = 5;
 
     var f = 1, f1 = 1, c = 1, c1 = 1;
 
@@ -411,7 +410,7 @@
     }
 
     function push(x){
-        for(let i = 1; i <= 5; i++){
+        for(let i = 1; i <= 6; i++){
             document.getElementById("s" + i).style.opacity="0%";
             document.getElementById("" + i).style.borderColor="var(--black)";
         }
@@ -427,7 +426,9 @@
         document.getElementById("s3").style.opacity="0%";
         document.getElementById("s4").style.opacity="0%";
         document.getElementById("s5").style.opacity="0%";
+        document.getElementById("s6").style.opacity="0%";
         document.getElementById("s" + counter).style.opacity="100%";
+        document.getElementById("6").style.borderColor="var(--black)";
         document.getElementById("5").style.borderColor="var(--black)";
         document.getElementById("4").style.borderColor="var(--black)";
         document.getElementById("3").style.borderColor="var(--black)";
@@ -435,7 +436,7 @@
         document.getElementById("1").style.borderColor="var(--black)";
         document.getElementById("" + counter).style.borderColor="red";
         counter++;
-        if(counter > 5)counter = 1;
+        if(counter > 6)counter = 1;
         r = 5000;
     }, r);
     

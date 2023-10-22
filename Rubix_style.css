@@ -455,7 +455,7 @@ nav{
 }
 
 .m2{
-    background-image: url("./images/Maria.jpg");
+    background-image: url("./images/Bianca.jpg");
 }
 
 .m3{
@@ -467,7 +467,7 @@ nav{
 }
 
 .m5{
-    background-image: url("./images/Albert.jpg");
+    background-image: url("./images/Paul.jpg");
 }
 
 .m6{
@@ -475,7 +475,7 @@ nav{
 }
 
 .m7{
-    background-image: url("./images/Catalin.jpg");
+    background-image: url("./images/Emanuel.jpg");
 }
 
 .m8{
@@ -499,11 +499,7 @@ nav{
 }
 
 .m13{
-    background-image: url("./images/George.jpg");   
-}
-
-.m14{
-    background-image: url("./images/Darius.jpg");
+    background-image: url("./images/GeorgeO.jpg");   
 }
 
 #m1{
@@ -511,7 +507,7 @@ nav{
     flex-direction: column;
 }
 
-#m2,#m3,#m4,#m5,#m6,#m7,#m8,#m9,#m10,#m11,#m12,#m13,#m14{
+#m2,#m3,#m4,#m5,#m6,#m7,#m8,#m9,#m10,#m11,#m12,#m13{
     display: none;
     flex-direction: column;
 }
@@ -815,7 +811,7 @@ nav{
         width: 90vw;
     }
     .ftcn{
-        width: 90vw;
+        width: 90%;
     }
 }
 
