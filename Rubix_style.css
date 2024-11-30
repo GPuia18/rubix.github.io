@@ -473,7 +473,7 @@ nav {
 }
 
 .m1 {
-  background-image: url("./images/Alex.jpg");
+  background-image: url("./images/Andrei.jpg");
 }
 
 .m2 {
@@ -481,47 +481,55 @@ nav {
 }
 
 .m3 {
-  background-image: url("./images/GeorgeB.jpg");
+  background-image: url("./images/Nadir.jpg");
 }
 
 .m4 {
-  background-image: url("./images/Cristi.jpg");
-}
-
-.m5 {
   background-image: url("./images/Paul.jpg");
 }
 
-.m6 {
+.m5 {
   background-image: url("./images/Tudor.jpg");
 }
 
+.m6 {
+  background-image: url("./images/Victor.jpg");
+}
+
 .m7 {
-  background-image: url("./images/Emanuel.jpg");
-}
-
-.m8 {
-  background-image: url("./images/Elizabeth.jpg");
-}
-
-.m9 {
-  background-image: url("./images/Anamaria.JPG");
-}
-
-.m10 {
-  background-image: url("./images/Maia.JPG");
-}
-
-.m11 {
-  background-image: url("./images/Bogdan.jpg");
-}
-
-.m12 {
   background-image: url("./images/Alin.jpg");
 }
 
+.m8 {
+  background-image: url("./images/Cătăuță.jpg");
+}
+
+.m9 {
+  background-image: url("./images/Cristi.jpg");
+}
+
+.m10 {
+  background-image: url("./images/Gabriel.jpg");
+}
+
+.m11 {
+  background-image: url("./images/George.jpg");
+}
+
+.m12 {
+  background-image: url("./images/Irina.jpg");
+}
+
 .m13 {
-  background-image: url("./images/GeorgeO.jpg");
+  background-image: url("./images/Stephanie.jpg");
+}
+
+.m14 {
+  background-image: url("./images/Emanuel.jpg");
+}
+
+.m15 {
+  background-image: url("./images/VictorB.jpg");
 }
 
 #m1 {
@@ -540,7 +548,9 @@ nav {
 #m10,
 #m11,
 #m12,
-#m13 {
+#m13,
+#m14,
+#m15 {
   display: none;
   flex-direction: column;
 }
@@ -554,15 +564,7 @@ nav {
 }
 
 .mm3 {
-  background-image: url("./images/Alexandra.JPG");
-}
-
-.mm4 {
-  background-image: url("./images/Nicu.jpg");
-}
-
-.mm5 {
-  background-image: url("./images/Gabriel.jpg");
+  background-image: url("./images/Alexandra.jpg");
 }
 
 #mm1 {
